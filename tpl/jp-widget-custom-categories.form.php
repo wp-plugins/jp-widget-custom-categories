@@ -1,5 +1,20 @@
 <div class="jp_widget_categorynav" id="<?php echo $this->get_field_id('jp_widget_categorynav-table') ?>">
+	
 	<input class="data" type="hidden" id="<?php echo $this->get_field_id('categories') ?>" name="<?php echo $this->get_field_name('categories') ?>" value="" />
+
+	<p>
+		<label>
+			Title:
+			<input class="widefat" type="text" id="<?php echo $this->get_field_id('title') ?>" name="<?php echo $this->get_field_name('title') ?>" value="<?php echo $title ?>" />
+		</label>
+	</p>
+
+	<p>
+	<label>
+		Choose categories:
+	</label>
+	</p>
+
 	<?php if (!empty($categories)): ?>
 		<table>
 			<tbody>
@@ -41,12 +56,13 @@
 						</tr>
 					<?php endif ?>
 				<?php endforeach ?>
-						
+
 			</tbody>
 		</table>
 	<?php else: ?>
-		<i>Keine Kategorien eingeflegt</i>
+		<i>no categories to choose</i>
 	<?php endif ?>
+
 </div>
 <script type="text/javascript" language="javascript">
 	jp_widget_categorynav.process('<?php echo $this->get_field_id('jp_widget_categorynav-table') ?>');

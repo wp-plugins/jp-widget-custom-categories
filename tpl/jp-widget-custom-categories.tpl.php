@@ -1,13 +1,12 @@
+<?php echo $before_widget ?>
+
+<?php if (!empty($title)): ?>
+	<?php echo $before_title . $title . $after_title ?>
+<?php endif ?>
+
 <?php if (!empty($categories)): ?>
+
 	<ul class="categories <?php if (!is_home()): ?>categories-dark <?php endif ?> clearfix">
-
-		<!-- Home link -->
-
-		<?php if (is_home()): ?>
-			<li class="active home"><a href="/">Dein alpines Onlinemagazin</a></li>
-		<?php else: ?>
-			<li class="home"><a href="/">Dein alpines Onlinemagazin</a></li>
-		<?php endif ?>
 
 		<!-- The actual selected categories -->
 
@@ -40,4 +39,11 @@
 		<?php endforeach ?>
 				
 	</ul>
+
+<?php else: ?>
+
+	<i>No categories selected</i>
+
 <?php endif ?>
+
+<?php echo $after_widget ?>
