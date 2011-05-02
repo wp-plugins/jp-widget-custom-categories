@@ -1,0 +1,26 @@
+/* 
+    Document   : jp-widget-categorynav.css
+    Created on : 02.02.2011, 13:19:51
+    Author     : j.jarolim <office@jarolim.com>
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.jp_widget_categorynav {}
+
+	.jp_widget_categorynav table {
+		width: 100%;
+	}
+
+		.jp_widget_categorynav table td {
+			border-top: 1px solid #efefef;
+		}
+
+		.jp_widget_categorynav table tr:hover td {
+			background-color: #efefef;
+		}
+
+		.jp_widget_categorynav table tr:first-child td {
+			border-top: none;
+		}
+
